@@ -1,0 +1,249 @@
+net
+{
+	propagationenginegenerator1791944048146838126L = "edu.ucla.belief.approx.BeliefPropagationSettings@aeb94b";
+	recoveryenginegenerator6944530267470113528l = "edu.ucla.util.SettingsImpl@e5d925";
+	node_size = (130.0 55.0);
+}
+
+node flip1
+{
+	states = ("Head" "Tail" );
+	position = (33 -177);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable8";
+	label = "flip1";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node switch3
+{
+	states = ("O" "X" );
+	position = (466 -278);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "true";
+	ID = "variable11";
+	label = "switch3";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node flip3
+{
+	states = ("Head" "Tail" );
+	position = (364 -176);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable10";
+	label = "flip3";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node switch4
+{
+	states = ("O" "X" );
+	position = (627 -279);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "true";
+	ID = "variable11";
+	label = "switch4";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node flip6
+{
+	states = ("Head" "Tail" );
+	position = (842 -184);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable10";
+	label = "flip6";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node flip8
+{
+	states = ("Head" "Tail" );
+	position = (1152 -188);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable10";
+	label = "flip8";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node switch6
+{
+	states = ("O" "X" );
+	position = (934 -280);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "true";
+	ID = "variable11";
+	label = "switch6";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node flip5
+{
+	states = ("Head" "Tail" );
+	position = (685 -181);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable10";
+	label = "flip5";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node flip7
+{
+	states = ("Head" "Tail" );
+	position = (991 -186);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable10";
+	label = "flip7";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node switch5
+{
+	states = ("O" "X" );
+	position = (779 -283);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "true";
+	ID = "variable11";
+	label = "switch5";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node flip4
+{
+	states = ("Head" "Tail" );
+	position = (522 -179);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable10";
+	label = "flip4";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node switch7
+{
+	states = ("O" "X" );
+	position = (1103 -275);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "true";
+	ID = "variable11";
+	label = "switch7";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node flip2
+{
+	states = ("Head" "Tail" );
+	position = (207 -175);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable10";
+	label = "flip2";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node switch2
+{
+	states = ("O" "X" );
+	position = (289 -280);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "true";
+	ID = "variable11";
+	label = "switch2";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node switch
+{
+	states = ("O" "X" );
+	position = (102 -278);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "true";
+	ID = "variable9";
+	label = "switch";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+potential ( flip1 | )
+{
+	data = (	0.5	0.5	);
+}
+potential ( switch3 | switch2 )
+{
+	data = ((	1.0	0.0	)
+		(	0.4	0.6	));
+}
+potential ( flip3 | switch2 )
+{
+	data = ((	0.7	0.3	)
+		(	0.5	0.5	));
+}
+potential ( switch4 | switch3 )
+{
+	data = ((	1.0	0.0	)
+		(	0.4	0.6	));
+}
+potential ( flip6 | switch5 )
+{
+	data = ((	0.7	0.3	)
+		(	0.5	0.5	));
+}
+potential ( flip8 | switch7 )
+{
+	data = ((	0.7	0.3	)
+		(	0.5	0.5	));
+}
+potential ( switch6 | switch5 )
+{
+	data = ((	1.0	0.0	)
+		(	0.4	0.6	));
+}
+potential ( flip5 | switch4 )
+{
+	data = ((	0.7	0.3	)
+		(	0.5	0.5	));
+}
+potential ( flip7 | switch6 )
+{
+	data = ((	0.7	0.3	)
+		(	0.5	0.5	));
+}
+potential ( switch5 | switch4 )
+{
+	data = ((	1.0	0.0	)
+		(	0.4	0.6	));
+}
+potential ( flip4 | switch3 )
+{
+	data = ((	0.7	0.3	)
+		(	0.5	0.5	));
+}
+potential ( switch7 | switch6 )
+{
+	data = ((	1.0	0.0	)
+		(	0.4	0.6	));
+}
+potential ( flip2 | switch )
+{
+	data = ((	0.7	0.3	)
+		(	0.5	0.5	));
+}
+potential ( switch2 | switch )
+{
+	data = ((	1.0	0.0	)
+		(	0.4	0.6	));
+}
+potential ( switch | )
+{
+	data = (	0.4	0.6	);
+}
