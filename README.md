@@ -105,7 +105,7 @@
 이 프로젝트는 대규모 데이터 분석을 위한 필수 기술인 **분산 컴퓨팅 프레임워크** 활용 능력을 보여줍니다. 학부 '대규모 데이터 분석' LAB 과정에서 **Apache Spark**와 **Apache Flink**를 사용하여 대용량 데이터를 처리하고 분석하는 다양한 과제를 수행했습니다. 이를 통해 MapReduce 패러다임에 대한 깊은 이해와 실질적인 데이터 엔지니어링 역량을 함양했습니다.
 
 ➡️ **[전체 실험 과정 및 결과 리포트 보기](./project5-assets/BigData_Lab_Report.pdf)**
-*(학업 윤리 준수를 위해 전체 소스 코드는 공개하지 않으며, 요청 시 비공개 저장소를 통해 공유 가능합니다.)*
+
 
 #### **2. 주요 기술 스택 (Tech Stack)**
 - **Frameworks**: `Apache Spark`, `Apache Flink`, `Hadoop MapReduce`
