@@ -73,7 +73,7 @@ def hasCycle(head: Optional[ListNode]) -> bool:
 def create_linked_list(nodes_val: list, pos: int) -> Optional[ListNode]:
     if not nodes_val:
         return None
-    nodes = [ListNode(val) for val in nodes_val]
+    nodes = [ListNode(val) for val in nodes_val] 
     head = nodes[0]
     for i in range(len(nodes) - 1):
         nodes[i].next = nodes[i+1]

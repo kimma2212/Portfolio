@@ -31,25 +31,25 @@ Output: true
 
 
 
-# def canConstruct(ransomNote: str, magazine: str) -> bool:
-#     first = {}
+def canConstruct(ransomNote: str, magazine: str) -> bool:
+    first = {}
 
-#     for letter in magazine:
-#         if letter in first:
-#             first[letter] += 1
-#         else:
-#             first[letter] = 1
+    for letter in magazine:
+        if letter in first:
+            first[letter] += 1
+        else:
+            first[letter] = 1
 
-#     for i in ransomNote:
-#         if i in first:
-#             first[i] -= 1
-#             if first[i] < 0:
-#                 return False
-#         else:
-#             return False
+    for i in ransomNote:
+        if i in first:
+            first[i] -= 1
+            if first[i] < 0:
+                return False
+        else:
+            return False
         
     
-#     return True
+    return True
 
 
 
