@@ -1,13 +1,14 @@
 
 
-## 🌱 콩 낭종(Cyst) 자동 탐지 딥러닝 시스템 | 졸업 캡스톤 프로젝트 (2023)
+## 🌱 콩 낭종(Cyst) 미세객체 탐지 (MicroScale Object dectection) 딥러닝 시스템 | 졸업 캡스톤 프로젝트 (2023)
 
-**교수·박사 지도 하 4인 팀 | Detectron2 · Mask R-CNN · Raspberry Pi**
+**교수·박사 지도 하 4인 팀 프로젝트 | Detectron2 · Mask R-CNN · Raspberry Pi**
 
-아이오와 농경지 콩 뿌리의 낭종을 자동으로 탐지하는 딥러닝 시스템. 데이터 수집부터 현장 배포까지 전 과정 진행.
+아이오와 농경지 콩 뿌리의 낭종(Cysts)을 탐지하고 개수를 세주는 딥러닝 시스템. 데이터 수집부터 프로토타입까지 전 과정 진행.
 
 **역할**
-- 콩 뿌리 이미지 직접 촬영 및 Labelme로 낭종 레이블링 — 학습 데이터셋 구축 담당
+- 모델 성능 비교 및 선택. (YOLO, Faster R-CNN, R-CNN, Fast R-CNN) 
+- 콩 뿌리 이미지 직접 촬영 및 Labelme로 낭종 레이블링 — 학습 데이터셋 구축 및 형태(COCO) 변환
 - Raspberry Pi에 PyTorch, Detectron2, OpenCV 설치 및 환경 세팅
 - 학습된 Mask R-CNN 모델 Raspberry Pi 배포 연구
 
@@ -26,7 +27,7 @@
 Alpha-Beta Pruning 알고리즘으로 오셀로 AI 봇 구현. 다양한 평가 함수와 탐색 깊이를 비교 실험.
 
 **구현 내용**
-- Alpha-Beta Pruning depth 4 vs 8 비교 실험 — depth 높을수록 항상 승리
+- Alpha-Beta Pruning depth 4 vs 8 비교 실험 — depth 높을수록 승률 및 시간 증가
 - 코너·엣지 우선 가중치 평가 함수 구현
 - 이동 가능 수 기반 평가 함수 구현 및 성능 비교
 
