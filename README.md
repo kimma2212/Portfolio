@@ -1,3 +1,35 @@
+---
+
+## 🌱 콩 낭종(Cyst) 자동 탐지 딥러닝 시스템 | 졸업 캡스톤 프로젝트 (2023)
+
+**교수·박사 지도 하 4인 팀 | Detectron2 · Mask R-CNN · Raspberry Pi**
+
+아이오와 농경지 콩 뿌리의 낭종을 자동으로 탐지하는 딥러닝 시스템. 데이터 수집부터 현장 배포까지 전 과정 진행.
+
+**역할**
+- 콩 뿌리 이미지 직접 촬영 및 Labelme로 낭종 레이블링 — 학습 데이터셋 구축 담당
+- Raspberry Pi에 PyTorch, Detectron2, OpenCV 설치 및 환경 세팅
+- 학습된 Mask R-CNN 모델 Raspberry Pi 배포 연구
+
+**Tech Stack:** Python, Detectron2, Mask R-CNN, Labelme, Raspberry Pi, Google Colab
+
+
+<img width="1906" height="964" alt="image" src="https://github.com/user-attachments/assets/8bf62dce-aa51-40f4-90c1-13e8563f5508" />
+
+
+---
+
+## 🔬 KIER (한국에너지기술연구원) - 연구 보조 (2023.07)
+
+**AI 기반 학술 논문 자동 수집·요약 툴 개발**
+
+- arXiv, Scopus, Semantic Scholar API 연동으로 해외 논문 자동 수집 파이프라인 구축 (Python, Pandas)
+- BERT, SciBERT, OpenAI API 비교 테스트 후 LangChain 백엔드 도입 — 논문 요약·번역 기능 구현
+- Streamlit으로 내부 연구원용 UI/UX 프론트엔드 개발
+
+
+
+
 # 🤖 AI/ML 포트폴리오 (AI/ML Portfolio)
 
 안녕하세요! 이 저장소는 저의 인공지능 및 머신러닝 프로젝트들을 모아놓은 포트폴리오입니다. 각 프로젝트는 문제 정의부터 데이터 처리, 모델링, 그리고 결과 분석까지의 전 과정을 담고 있습니다.
