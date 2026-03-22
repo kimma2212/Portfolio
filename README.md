@@ -19,6 +19,61 @@
 
 ---
 
+## ♟️ AI 오셀로 게임 — Alpha-Beta Pruning 최적화 봇 (Python)
+
+**AI 수업 프로젝트 | Iowa State University**
+
+Alpha-Beta Pruning 알고리즘으로 오셀로 AI 봇 구현. 다양한 평가 함수와 탐색 깊이를 비교 실험.
+
+**구현 내용**
+- Alpha-Beta Pruning depth 4 vs 8 비교 실험 — depth 높을수록 항상 승리
+- 코너·엣지 우선 가중치 평가 함수 구현
+- 이동 가능 수 기반 평가 함수 구현 및 성능 비교
+
+**Tech Stack:** Python
+
+---
+
+## 🪙 베이지안 네트워크 — 확률적 추론 (Bayesian Network)
+
+**AI 수업 프로젝트 | Iowa State University**
+
+SamIam 툴로 베이지안 네트워크 직접 설계, MAP 추론으로 숨겨진 상태 예측.
+
+**구현 내용**
+- 동전 교체 문제를 베이지안 네트워크로 모델링
+- MAP, MPE 쿼리로 확률적 추론 수행
+- P(MAP|e) = 0.469 결과 도출
+
+**Tech Stack:** SamIam, Bayesian Network
+
+---
+
+
+## 🌽 옥수수·콩 가격 예측 — Machine Learning (Python)
+
+**머신러닝 수업 프로젝트 | Iowa State University | 개인 프로젝트**
+
+아이오와 2022년 옥수수·콩 가격 데이터와 날씨 데이터를 결합해 가격을 예측하는 ML 모델.
+
+**구현 내용**
+- 옥수수 가격, 콩 가격, 기상 데이터(강수량·최고기온·최저기온) 3개 소스 직접 수집 및 병합
+- Pandas로 결측치 처리, 월별 데이터 정렬 및 전처리
+- Linear Regression 모델로 가격 예측 및 평가
+
+**Tech Stack:** Python, Pandas, Scikit-learn, Jupyter Notebook
+
+
+| | |
+|:---:|:---:|
+| <img width="400" src="https://github.com/user-attachments/assets/97cfeace-aa3f-4bda-ae09-19147bbeea39" /> | <img width="400" src="https://github.com/user-attachments/assets/75d9dc00-3c2e-4665-b8e9-cd533573982b" /> |
+| <img width="400" src="https://github.com/user-attachments/assets/f8c0eb05-caf0-4b6d-8eaf-8aa76b3dc9ec" /> | <img width="400" src="https://github.com/user-attachments/assets/14d6da32-888a-4d5b-a8e9-42659a20e2a2" /> |
+
+
+
+---
+
+
 ## 🔬 KIER (한국에너지기술연구원) - 연구 보조 (2023.07)
 
 **AI 기반 학술 논문 자동 수집·요약 툴 개발**
@@ -28,136 +83,3 @@
 - Streamlit으로 내부 연구원용 UI/UX 프론트엔드 개발
 
 
-
-
-# 🤖 AI/ML 포트폴리오 (AI/ML Portfolio)
-
-안녕하세요! 이 저장소는 저의 인공지능 및 머신러닝 프로젝트들을 모아놓은 포트폴리오입니다. 각 프로젝트는 문제 정의부터 데이터 처리, 모델링, 그리고 결과 분석까지의 전 과정을 담고 있습니다.
-
----
-
-### 📚 목차 (Table of Contents)
-1. [**Project 1:** 농산물 가격 예측 모델](#project-1-농산물-가격-예측-모델)
-2. [**Project 2:** 베이즈 네트워크를 이용한 확률적 추론](#project-2-베이즈-네트워크를-이용한-확률적-추론-및-상태-예측)
-3. [**Project 3:** 딥러닝 기반 미세 객체 탐지](#project-3-딥러닝-기반-미세-객체-탐지)
-4. [**Project 4:** 데이터베이스 관리 및 고급 SQL](#project-4-데이터베이스-관리-및-고급-sql)
-5. [**Project 5:** 대규모 분산 데이터 처리](#project-5-대규모-분산-데이터-처리-with-spark--flink)
-
----
-
-## **Project 1: 농산물 가격 예측 모델**
-### **날씨 데이터를 활용한 옥수수 및 콩 가격 예측**
-
-#### **1. 프로젝트 개요 (Overview)**
-이 프로젝트는 2022년 아이오와 주의 월별 옥수수 및 콩 가격 데이터와 날씨 데이터를 결합하여, 농산물 가격을 예측하는 머신러닝 모델을 개발하는 것을 목표로 합니다. 데이터 전처리, 선형 회귀 모델 구축, 그리고 교차 검증을 통한 성능 평가 과정을 통해 가격 변동에 영향을 미치는 주요 요인을 분석하고, 모델의 예측 신뢰도를 검증했습니다.
-
-#### **2. 주요 기술 스택 (Tech Stack)**
-- **Language**: `Python`
-- **Libraries**: `Pandas`, `NumPy`, `Scikit-learn`, `Matplotlib`, `Seaborn`
-
-#### **3. 데이터 및 전처리 (Data & Preprocessing)**
-- **Data Source**: 2022년 아이오와 주 공공 농산물 가격 데이터(Excel) 및 기상 데이터(CSV)
-- **Preprocessing**:
-    - 여러 파일로 분산된 데이터를 **월(Month)** 기준으로 병합했습니다.
-    - 결측값을 제거하고, 수치형 데이터를 정규화했습니다.
-    - '월'과 같은 범주형 변수를 모델이 학습할 수 있도록 **원-핫 인코딩(One-Hot Encoding)** 기법을 적용했습니다.
-
-#### **4. 모델 구축 및 평가 (Modeling & Evaluation)**
-- **Model**: **선형 회귀 (Linear Regression)** 모델을 사용하여 가격 예측을 수행했습니다.
-- **Evaluation**: 모델의 예측 성능을 **MSE (Mean Squared Error)**, **RMSE (Root Mean Squared Error)**, 그리고 **R-squared (결정 계수)** 지표로 평가했습니다.
-- **Validation**: 과적합을 방지하고 모델의 일반화 성능을 객관적으로 평가하기 위해 **5-폴드 교차 검증 (5-Fold Cross-Validation)**을 수행했습니다.
-
----
-
-## **Project 2: 베이즈 네트워크를 이용한 확률적 추론 및 상태 예측**
-### **관찰된 데이터를 기반으로 숨겨진 상태(State) 추론**
-
-#### **1. 프로젝트 개요 (Overview)**
-이 프로젝트는 AI의 핵심 기술 중 하나인 **베이즈 네트워크(Bayesian Network)**를 사용하여 관찰된 데이터를 기반으로 시스템의 숨겨진 상태를 추론하는 문제를 해결합니다. 주어진 8번의 동전 던지기 결과(증거)를 바탕으로, 동전이 공정한 동전(Fair Coin)에서 불량 동전(Biased Coin)으로 **언제 바뀌었는지**를 예측하는 모델을 구축하고 분석했습니다.
-
-#### **2. 핵심 개념 및 기술 (Key Concepts & Tech)**
-- **Tool**: **SamIam** (베이즈 네트워크 모델링 및 추론 소프트웨어)
-- **Key Concepts**:
-    - **베이즈 네트워크**: 변수 간의 확률적 인과 관계를 방향성 비순환 그래프(DAG)로 모델링하는 기법입니다.
-    - **확률적 추론 (Probabilistic Inference)**: 불완전한 정보(증거)가 주어졌을 때, 관심 있는 변수(숨겨진 상태)의 확률 분포를 계산하는 과정입니다.
-    - **MAP (Maximum a Posteriori)**: 주어진 증거 하에서 **가장 가능성이 높은 가설(상태들의 조합)**을 찾는 추론 방식입니다.
-
----
-
-## **Project 3: 딥러닝 기반 미세 객체 탐지**
-### **이미지 및 영상 속 낭종(Cyst) 자동 탐지 시스템 개발**
-
-#### **1. 프로젝트 개요 (Overview)**
-이 프로젝트는 이미지와 영상 속에서 미세한 크기의 낭종(cyst)을 자동으로 탐지하는 딥러닝 시스템을 개발하는 것을 목표로 했습니다. 직접 데이터셋을 구축하고 어노테이션하는 과정부터, **Mask R-CNN** 모델을 학습시키고, 최종적으로 **Raspberry Pi** 기반의 하드웨어 프로토타입에 탑재하여 실시간 탐지 기능을 구현한 엔드-투-엔드(End-to-End) 프로젝트입니다.
-
-#### **2. 프로젝트 링크 (Link to Project)**
-- **[Official Project Homepage](https://sddec23-10.sd.ece.iastate.edu/)**
-
-#### **3. 저의 역할 및 기여 (My Role & Contributions)**
-- **데이터셋 구축 및 어노테이션**: **LabelMe** 툴을 사용하여 낭종 탐지 모델 학습에 필요한 이미지 데이터셋을 직접 구축하고 라벨링을 수행했습니다.
-- **딥러닝 모델 학습**: **Detectron2** 프레임워크 기반의 **Mask R-CNN** 모델을 학습시키고 성능을 개선했습니다.
-- **하드웨어 프로토타입 제작**: **Raspberry Pi**에 학습된 모델을 통합하여 실시간 객체 탐지 시스템을 구현했습니다.
-
-#### **4. 주요 기술 스택 (Tech Stack)**
-- **Frameworks**: `Detectron2`, `PyTorch`
-- **Models**: `Mask R-CNN`
-- **Tools**: `Python`, `LabelMe`, `OpenCV`
-- **Hardware**: `Raspberry Pi`
-
----
-
-## **Project 4: 데이터베이스 관리 및 고급 SQL**
-### **World 데이터베이스를 활용한 View 및 Trigger 설계**
-
-#### **1. 프로젝트 개요 (Overview)**
-이 프로젝트는 AI 및 데이터 분석의 근간이 되는 데이터베이스 관리 능력을 보여주기 위해 진행되었습니다. 공개된 `world` 데이터베이스를 활용하여, 복잡한 질의를 단순화하는 **View**를 생성하고, 특정 데이터 변경 시 연관된 데이터를 자동으로 업데이트하여 데이터 무결성을 유지하는 **Trigger**를 설계 및 구현했습니다.
-
-#### **2. 주요 기술 스택 (Tech Stack)**
-- **Database**: `MySQL`
-- **Language**: `SQL`
-
-#### **3. 구현 내용 및 핵심 역량**
-
-**1) 데이터 요약을 위한 `VIEW` 생성 (`project0_1.sql`)**
-- **목표**: 각 대륙별로 가장 인구가 많은 도시와 해당 대륙의 국가 수를 한 번에 조회할 수 있는 가상 테이블 `continentlcnc`를 생성했습니다.
-- **구현**: 상관 서브쿼리(Correlated Subquery)를 활용하여 각 대륙 그룹 내에서 인구가 가장 많은 도시를 효율적으로 찾아내고, `GROUP BY`로 국가 수를 집계했습니다.
-- **보여주는 역량**: 복잡한 쿼리를 `VIEW`로 캡슐화하여 데이터 접근성을 높이는 SQL 활용 능력과 데이터 요약 능력을 보여줍니다.
-
-**2) 데이터 무결성 유지를 위한 `TRIGGER` 설계 (`trigger.sql`)**
-- **목표**: 특정 도시의 인구가 8% 이상 감소할 경우, 해당 도시가 속한 대륙의 모든 국가 인구를 4%씩 자동으로 감소시키는 트리거 `decreasing_population`을 구현했습니다.
-- **구현**: `BEFORE UPDATE` 트리거와 `OLD`, `NEW` 키워드를 사용하여 데이터 변경 전후 상태를 비교하고, 조건에 따라 연관 테이블의 데이터를 자동으로 업데이트하도록 설계했습니다.
-- **보여주는 역량**: 데이터베이스 내 이벤트에 따른 연쇄적 처리를 자동화하는 고급 설계 능력과 데이터의 일관성 및 무결성을 시스템적으로 보장하는 능력을 증명합니다.
-
----
-
-## **Project 5: 대규모 분산 데이터 처리 with Spark & Flink**
-### **Apache Spark 및 Flink를 활용한 대용량 데이터 분석 및 처리**
-
-#### **1. 프로젝트 개요 (Overview)**
-이 프로젝트는 대규모 데이터 분석을 위한 필수 기술인 **분산 컴퓨팅 프레임워크** 활용 능력을 보여줍니다. 학부 '대규모 데이터 분석' LAB 과정에서 **Apache Spark**와 **Apache Flink**를 사용하여 대용량 데이터를 처리하고 분석하는 다양한 과제를 수행했습니다. 이를 통해 MapReduce 패러다임에 대한 깊은 이해와 실질적인 데이터 엔지니어링 역량을 함양했습니다.
-
-➡️ **[전체 실험 과정 및 결과 리포트 보기](./project5-assets/BigData_Lab_Report.pdf)**
-
-
-#### **2. 주요 기술 스택 (Tech Stack)**
-- **Frameworks**: `Apache Spark`, `Apache Flink`, `Hadoop MapReduce`
-- **Language**: `Java`
-- **Infrastructure**: `Hadoop (HDFS)`
-
-#### **3. 세부 과제 및 성과**
-
-**Part 1: GitHub 데이터 분석 (Spark)**
-- **과제**: 대용량 CSV 데이터를 분석하여, 프로그래밍 언어별 (1) 저장소 수와 (2) 가장 많은 스타(star)를 받은 저장소를 집계 및 정렬했습니다.
-- **주요 로직**: `mapToPair`를 이용해 Key-Value 쌍을 생성하고, `reduceByKey`로 언어별 데이터를 그룹화하여 저장소 수를 합산하고 스타 수를 비교하는 로직을 구현했습니다.
-- **성과**: 대용량 텍스트 데이터에 대한 분산 집계 및 정렬 처리 능력을 증명했습니다.
-`[여기에 GitHub 분석 결과 스크린샷을 삽입하세요]`
-
-**Part 2: 그래프 내 삼각형 구조 탐색 (Spark)**
-- **과제**: 특허 인용 관계 그래프 데이터에서 **길이 3의 비방향성 사이클(삼각형 구조)**의 총 개수를 계산했습니다.
-- **주요 로직**: 여러 단계의 `map`, `join`, `reduce` 연산을 통해 인접 리스트를 생성하고, 친구의 친구 관계를 탐색하여 삼각형 구조를 찾아내는 알고리즘을 분산 환경에 맞게 설계했습니다.
-- **성과**: 복잡한 그래프 알고리즘을 분산 처리 패러다임에 맞게 구현하는 문제 해결 능력을 보여줍니다.
-
-**Part 3: 방화벽 로그 분석 (Spark)**
-- **과제**: IP 추적 로그와 차단 로그라는 두 개의 다른 데이터 소스를 결합하여, 차단된 IP의 활동 내역을 추출하고 가장 많은 활동을 보인 IP 주소를 집계했습니다.
-- **주요 로직**: 각 로그 파일을 RDD로 변환한 후, `join` 연산을 통해 두 데이터 소스를 결합하고 `filter`를 통해 'Blocked' 상태의 로그만 추출했습니다.
-- **성과**: 분산 환경에서의 데이터 조인(Join), 필터링, 집계 등 데이터 파이프라인의 핵심 연산 능력을 증명했습니다.
